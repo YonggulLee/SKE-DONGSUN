@@ -12,7 +12,7 @@ Date : 2021.06.30
   width: 1700px;
   height: 395px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 158px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 20px 1fr 1fr 1fr 1fr;
 }
 
@@ -39,7 +39,7 @@ Date : 2021.06.30
 span.dashboard-article-header-item-title {
   display: block;
   margin-left: 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -53,7 +53,7 @@ span.dashboard-article-header-item-sub-title {
 
 div.dashboard-article-header-item-sub-box {
   /* border: 1px solid red; */
-  width: 85px;
+  width: 70px;
   height: 30px;
   margin-left: 20px;
   padding-bottom: 5px;
@@ -75,8 +75,8 @@ div.dashboard-article-header-item-sub-box-2 {
 
 span.dashboard-article-header-item-sub-box-num {
   display: block;
-  margin-top: 5px;
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -111,6 +111,7 @@ article.dashboard-article-fire-box {
   /* margin-top: -30px; */
   display: grid;
   grid-template-columns: 1fr 1fr 30px;
+  margin-left: 10px;
 }
 
 .dashboard-article-body-chart-index-box-03-item {
@@ -125,10 +126,20 @@ article.dashboard-article-fire-box {
   margin: 5px 0 0 5px;
 }
 
-.dashboard-article-body-chart-index-title {
+.dashboard-article-body-chart-index-title-green {
   font-size: 13px;
   font-weight: 700;
-  color: #797979;
+  color: #59c244;
+}
+.dashboard-article-body-chart-index-title-blue {
+  font-size: 13px;
+  font-weight: 700;
+  color: #298aca;
+}
+.dashboard-article-body-chart-index-title-yellow {
+  font-size: 13px;
+  font-weight: 700;
+  color: #eec34d;
 }
 
 .dashboard-article-body-chart-index-value {
@@ -145,7 +156,7 @@ article.dashboard-article-fire-box {
 
 .chart {
   /* border: 1px solid red; */
-  width: 320px;
+  width: 300px;
   height: 220px;
 }
 

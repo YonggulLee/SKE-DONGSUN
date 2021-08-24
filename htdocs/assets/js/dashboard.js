@@ -141,30 +141,30 @@ function setCurrentData() {
   let innerCheck = '<i class="fas fa-check-circle"></i> 정상';
   let innerCross = '<i class="fas fa-times-circle"></i> 비정상';
 
-  const fireElem1 = document.querySelector('#fire-1');
-  const fireElem2 = document.querySelector('#fire-2');
-  const fireElem3 = document.querySelector('#fire-3');
+  // const fireElem1 = document.querySelector('#fire-1');
+  // const fireElem2 = document.querySelector('#fire-2');
+  // const fireElem3 = document.querySelector('#fire-3');
 
-  if (fire1.state[0].value == 0) {
-    fireElem1.innerHTML = innerCheck;
-  } else {
-    fireElem1.innerHTML = innerCross;
-    fireElem1.classList.add('bad');
-  }
+  // if (fire1.state[0].value == 0) {
+  //   fireElem1.innerHTML = innerCheck;
+  // } else {
+  //   fireElem1.innerHTML = innerCross;
+  //   fireElem1.classList.add('bad');
+  // }
 
-  if (fire2.state[0].value == 0) {
-    fireElem2.innerHTML = innerCheck;
-  } else {
-    fireElem2.innerHTML = innerCross;
-    fireElem2.classList.add('bad');
-  }
+  // if (fire2.state[0].value == 0) {
+  //   fireElem2.innerHTML = innerCheck;
+  // } else {
+  //   fireElem2.innerHTML = innerCross;
+  //   fireElem2.classList.add('bad');
+  // }
 
-  if (fire3.state[0].value == 0) {
-    fireElem3.innerHTML = innerCheck;
-  } else {
-    fireElem3.innerHTML = innerCross;
-    fireElem3.classList.add('bad');
-  }
+  // if (fire3.state[0].value == 0) {
+  //   fireElem3.innerHTML = innerCheck;
+  // } else {
+  //   fireElem3.innerHTML = innerCross;
+  //   fireElem3.classList.add('bad');
+  // }
 
   // 기상대 풍향
   let windDirValue = weather.windDir[0].value;
@@ -766,6 +766,7 @@ window.addEventListener('DOMContentLoaded', async function () {
   {
     // 차트 데이들을 서버에서 불럽옵니다
     await getChartData();
+    console.log(vibeChartData);
     // 차트 엘리먼트 가져오기
     const noiseChart1 = getChartElement('noiseChart1', '2d');
     const noiseChart2 = getChartElement('noiseChart2', '2d');
@@ -831,7 +832,7 @@ window.addEventListener('DOMContentLoaded', async function () {
       '10pm'
     );
 
-    // // API에서 꺼꾸로 넘어오고 있는 데이터의 순서 반전
+    // API에서 꺼꾸로 넘어오고 있는 데이터의 순서 반전
     // x = vibeChartData.x_1;
     // xReverse = reverseArrayOrder(x);
     // y = vibeChartData.y_1;
@@ -1117,47 +1118,47 @@ window.addEventListener('DOMContentLoaded', async function () {
   }
 
   // 스케줄러 설정
-  {
-    const slct = document.querySelector('#preset-list');
-    const btn_start = document.querySelector('.preset-start');
-    const btn_stop = document.querySelector('.preset-stop');
+  // {
+  //   const slct = document.querySelector('#preset-list');
+  //   const btn_start = document.querySelector('.preset-start');
+  //   const btn_stop = document.querySelector('.preset-stop');
 
-    for (const {
-      scheduler_idx: _idx,
-      scheduler_name: _name,
-      status,
-    } of schedule) {
-      const _elem = document.createElement('option');
-      _elem.value = _idx;
-      _elem.innerText = _name;
-      _elem.selected = status === '10';
-      slct.appendChild(_elem);
-    }
+  //   for (const {
+  //     scheduler_idx: _idx,
+  //     scheduler_name: _name,
+  //     status,
+  //   } of schedule) {
+  //     const _elem = document.createElement('option');
+  //     _elem.value = _idx;
+  //     _elem.innerText = _name;
+  //     _elem.selected = status === '10';
+  //     slct.appendChild(_elem);
+  //   }
 
-    /**
-     * 진행 상태에 따라서 <select>를 disable 시키고 시작/종료 <button>을 감춘다.
-     * @param {Bolean} on 진행중인 스케줄 유무
-     */
-    const toggleElements = (on) => {
-      btn_start.style.display = on ? 'none' : '';
-      btn_stop.style.display = on ? '' : 'none';
-      slct.disabled = on;
-    };
+  //   /**
+  //    * 진행 상태에 따라서 <select>를 disable 시키고 시작/종료 <button>을 감춘다.
+  //    * @param {Bolean} on 진행중인 스케줄 유무
+  //    */
+  //   const toggleElements = (on) => {
+  //     btn_start.style.display = on ? 'none' : '';
+  //     btn_stop.style.display = on ? '' : 'none';
+  //     slct.disabled = on;
+  //   };
 
-    toggleElements(slct.value);
+  //   toggleElements(slct.value);
 
-    btn_start.addEventListener('click', async () => {
-      const _idx = slct.value;
-      if (_idx.length == 0) return;
-      await farota.post(`/scheduler/${_idx}/status`, { status: '10' });
-      toggleElements(true);
-    });
-    btn_stop.addEventListener('click', async () => {
-      const _idx = slct.value;
-      await farota.post(`/scheduler/${_idx}/status`, { status: '00' });
-      toggleElements(false);
-    });
-  }
+  //   btn_start.addEventListener('click', async () => {
+  //     const _idx = slct.value;
+  //     if (_idx.length == 0) return;
+  //     await farota.post(`/scheduler/${_idx}/status`, { status: '10' });
+  //     toggleElements(true);
+  //   });
+  //   btn_stop.addEventListener('click', async () => {
+  //     const _idx = slct.value;
+  //     await farota.post(`/scheduler/${_idx}/status`, { status: '00' });
+  //     toggleElements(false);
+  //   });
+  // }
 });
 
 // 화면 비동기 리프레시
