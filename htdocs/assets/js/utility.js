@@ -203,5 +203,11 @@ function downlaodExcelThreeColumn(
   );
 }
 
+function logout() {
+  localStorage.removeItem('access_token'); //삭제
+  window.location.href = 'index.html';
+  console.log('logout done!');
+}
+
 // id : skec7@sk.com
 // password : skec7@pw
