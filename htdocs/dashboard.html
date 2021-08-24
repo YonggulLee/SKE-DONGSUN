@@ -59,33 +59,33 @@
           </li>
 
           <li class="top-bar-item">
-            <select class="dropbtn" id="preset-list">
+            <!-- <select class="dropbtn" id="preset-list">
               <option class="dropdown-content" value="">
                 프리셋을 선택하세요
               </option>
             </select>
             <div class="dropdown">
-              <!-- <button class="dropbtn">프리셋을 선택하세요</button>
+              <button class="dropbtn">프리셋을 선택하세요</button>
               <div class="dropdown-content">
                 <span href="#"> Link 1 </span>
                 <span href="#"> Link 2 </span>
                 <span href="#"> Link 3 </span>
                 <span href="#"> Link 4 </span>
                 <span href="#"> Link 5 </span>
-              </div> -->
+              </div>
               <button class="preset-start" style="display: none">시작</button>
               <button class="preset-stop" style="display: none">정지</button>
-            </div>
+            </div> -->
           </li>
 
           <li class="top-bar-item">
-            <a href="#">
+            <!-- <a href="#">
               <img src="assets/img/top-bar_profile.png" alt="" />
-            </a>
+            </a> -->
           </li>
 
           <li class="top-bar-item">
-            <span class="top-bar-name">이용걸</span>
+            <!-- <span class="top-bar-name">이용걸</span> -->
           </li>
 
           <li class="top-bar-item">Log-out</li>
@@ -107,13 +107,13 @@
           </li>
 
           <!-- 사이드 메뉴 : 장치알람 -->
-          <!-- <li class="side-bar-item">
+          <li class="side-bar-item">
             <a href="firealarm.html"
               >화재 알람<br /><span class="side-bar-item-title-eng"
                 >Fire Alarm</span
               ></a
             >
-          </li> -->
+          </li>
 
           <!-- 사이드 메뉴 : 지상부(제어,센서,통신장비) -->
           <li class="side-bar-item">
@@ -179,9 +179,8 @@
           <div class="dashboard-article-body content-body">
             <div class="dashboard-article-body-chart-index-box-02-item">
               <div class="dashboard-article-body-chart-index-01">
-                <img src="assets/img/char_index_green.png" alt="" />
-                <span class="dashboard-article-body-chart-index-title"
-                  >L eq평균</span
+                <span class="dashboard-article-body-chart-index-title-green"
+                  >Leq평균</span
                 >
                 <span
                   class="dashboard-article-body-chart-index-value"
@@ -191,8 +190,7 @@
                 <span class="dashboard-article-body-chart-index-unit">dB</span>
               </div>
               <div class="dashboard-article-body-chart-index-02">
-                <img src="assets/img/char_index_blue.png" alt="" />
-                <span class="dashboard-article-body-chart-index-title"
+                <span class="dashboard-article-body-chart-index-title-blue"
                   >L max평균</span
                 >
                 <span
@@ -253,8 +251,7 @@
           <div class="dashboard-article-body content-body">
             <div class="dashboard-article-body-chart-index-box-02-item">
               <div class="dashboard-article-body-chart-index-01">
-                <img src="assets/img/char_index_green.png" alt="" />
-                <span class="dashboard-article-body-chart-index-title"
+                <span class="dashboard-article-body-chart-index-title-green"
                   >L eq평균</span
                 >
                 <span
@@ -265,8 +262,7 @@
                 <span class="dashboard-article-body-chart-index-unit">dB</span>
               </div>
               <div class="dashboard-article-body-chart-index-02">
-                <img src="assets/img/char_index_blue.png" alt="" />
-                <span class="dashboard-article-body-chart-index-title"
+                <span class="dashboard-article-body-chart-index-title-blue"
                   >L max평균</span
                 >
                 <span
@@ -331,8 +327,7 @@
           <div class="dashboard-article-body content-body">
             <div class="dashboard-article-body-chart-index-box-02-item">
               <div class="dashboard-article-body-chart-index-01">
-                <img src="assets/img/char_index_green.png" alt="" />
-                <span class="dashboard-article-body-chart-index-title"
+                <span class="dashboard-article-body-chart-index-title-green"
                   >pm 2.5 평균</span
                 >
                 <span
@@ -345,8 +340,7 @@
                 >
               </div>
               <div class="dashboard-article-body-chart-index-02">
-                <img src="assets/img/char_index_blue.png" alt="" />
-                <span class="dashboard-article-body-chart-index-title"
+                <span class="dashboard-article-body-chart-index-title-blue"
                   >pm 10 평균</span
                 >
                 <span
@@ -426,8 +420,7 @@
           <div class="dashboard-article-body content-body">
             <div class="dashboard-article-body-chart-index-box-03-item">
               <div class="dashboard-article-body-chart-index-01">
-                <img src="assets/img/char_index_green.png" alt="" />
-                <span class="dashboard-article-body-chart-index-title"
+                <span class="dashboard-article-body-chart-index-title-green"
                   >X 평균</span
                 >
                 <span
@@ -438,8 +431,7 @@
                 <span class="dashboard-article-body-chart-index-unit">g</span>
               </div>
               <div class="dashboard-article-body-chart-index-02">
-                <img src="assets/img/char_index_blue.png" alt="" />
-                <span class="dashboard-article-body-chart-index-title"
+                <span class="dashboard-article-body-chart-index-title-blue"
                   >Y 평균</span
                 >
                 <span
@@ -450,8 +442,106 @@
                 <span class="dashboard-article-body-chart-index-unit">g</span>
               </div>
               <div class="dashboard-article-body-chart-index-02">
-                <img src="assets/img/char_index_yellow.png" alt="" />
-                <span class="dashboard-article-body-chart-index-title"
+                <span class="dashboard-article-body-chart-index-title-yellow"
+                  >Z 평균</span
+                >
+                <span
+                  class="dashboard-article-body-chart-index-value"
+                  id="vibeCart1ZAverage"
+                  >0</span
+                >
+                <span class="dashboard-article-body-chart-index-unit">g</span>
+              </div>
+              <button
+                onclick="openGraphModal(this.id)"
+                class="graph-expend-btn"
+                id="graph-expend-btn-vibe"
+              >
+                <img src="assets/img/dashboard_icon_graph_modal.png" alt="" />
+              </button>
+            </div>
+            <div class="chart">
+              <canvas id="vibeChart"></canvas>
+            </div>
+          </div>
+        </article>
+        <article class="dashboard-article">
+          <div class="dashboard-article-header content-body box-item-4">
+            <div class="dashboard-article-header-item">
+              <img src="assets/img/dashboard_icon_viv.png" alt="" />
+              <span class="dashboard-article-header-item-title"
+                >진동센서 1</span
+              >
+            </div>
+            <div class="dashboard-article-header-item">
+              <span class="dashboard-article-header-item-sub-title">X</span>
+              <div class="dashboard-article-header-item-sub-box-2">
+                <span
+                  class="dashboard-article-header-item-sub-box-num font-green"
+                  id="vibe-x1"
+                  >-</span
+                >
+                <span
+                  class="dashboard-article-header-item-sub-box-unit font-gray"
+                  >g</span
+                >
+              </div>
+            </div>
+            <div class="dashboard-article-header-item">
+              <span class="dashboard-article-header-item-sub-title">Y</span>
+              <div class="dashboard-article-header-item-sub-box-2">
+                <span
+                  class="dashboard-article-header-item-sub-box-num font-blue"
+                  id="vibe-y1"
+                  >-</span
+                >
+                <span
+                  class="dashboard-article-header-item-sub-box-unit font-gray"
+                  >g</span
+                >
+              </div>
+            </div>
+            <div class="dashboard-article-header-item">
+              <span class="dashboard-article-header-item-sub-title">Z</span>
+              <div class="dashboard-article-header-item-sub-box-2">
+                <span
+                  class="dashboard-article-header-item-sub-box-num font-yellow"
+                  id="vibe-z1"
+                  >-</span
+                >
+                <span
+                  class="dashboard-article-header-item-sub-box-unit font-gray"
+                  >g</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-article-body content-body">
+            <div class="dashboard-article-body-chart-index-box-03-item">
+              <div class="dashboard-article-body-chart-index-01">
+                <span class="dashboard-article-body-chart-index-title-green"
+                  >X 평균</span
+                >
+                <span
+                  class="dashboard-article-body-chart-index-value"
+                  id="vibeCart1XAverage"
+                  >0</span
+                >
+                <span class="dashboard-article-body-chart-index-unit">g</span>
+              </div>
+              <div class="dashboard-article-body-chart-index-02">
+                <span class="dashboard-article-body-chart-index-title-blue"
+                  >Y 평균</span
+                >
+                <span
+                  class="dashboard-article-body-chart-index-value"
+                  id="vibeCart1YAverage"
+                  >0</span
+                >
+                <span class="dashboard-article-body-chart-index-unit">g</span>
+              </div>
+              <div class="dashboard-article-body-chart-index-02">
+                <span class="dashboard-article-body-chart-index-title-yellow"
                   >Z 평균</span
                 >
                 <span
@@ -560,7 +650,7 @@
         </article> -->
 
         <!-- 화재 센서 -->
-        <article class="dashboard-article-fire-box">
+        <!-- <article class="dashboard-article-fire-box">
           <div class="dashboard-article-fire content-body">
             <img
               class="dashboard-article-fire-img"
@@ -594,7 +684,7 @@
               <p id="fire-3"></p>
             </div>
           </div>
-        </article>
+        </article> -->
       </div>
       <!-- 상단 2열 -->
       <div class="dashboard-row-2">
